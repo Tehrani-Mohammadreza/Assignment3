@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a Microsoft Full-Stack Developer showcasing projects and skills.">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-container">
+        <span class="hamburger" id="hamburger">&#9776;</span> <!-- Hamburger icon -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I specialize in <strong>front-end</strong></strong> and <strong>back-end</strong></strong> development, with expertise in creating dynamic and functional web applications.
+      </p>
+      <img src="../images/profile.png" alt="profile of the web developer">
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>A responsive e-commerce website built using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>An interactive quiz app developed with React and Node.js.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Your email address">
+        </div>
+    
+        <div class="form-group">
+          <label for="description">Message:</label>
+          <textarea id="description" name="description" rows="5" required placeholder="Describe your message or inquiry"></textarea>
+        </div>
+    
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    
+      <!-- Confirmation message (hidden by default) -->
+      <div id="confirmationMessage" class="confirmation-message" style="display: none;">
+        <p>Thanks, Your message has been received. We will contact you as soon as possible.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
